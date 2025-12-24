@@ -1,0 +1,85 @@
+.listContainer {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  
+    h2 {
+      font-size: 1.5rem;
+      color: #1f2937;
+    }
+  }
+  
+  .tableWrapper {
+    overflow-x: auto; /* Mobil telefonda jadval sig'masa scroll bo'ladi */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px; /* Minimal kenglik */
+  
+    thead {
+      background-color: #f9fafb;
+      
+      th {
+        padding: 12px 16px;
+        text-align: left;
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: #6b7280;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e5e7eb;
+      }
+    }
+  
+    tbody {
+      tr {
+        border-bottom: 1px solid #f3f4f6;
+        transition: background 0.2s;
+  
+        &:hover {
+          background-color: #f9fafb;
+        }
+  
+        td {
+          padding: 14px 16px;
+          color: #374151;
+          font-size: 0.95rem;
+        }
+      }
+    }
+  }
+  
+  .debt {
+    color: #ef4444; /* Qizil rang (qarz uchun) */
+    font-weight: 600;
+  }
+  
+  .noDebt {
+    color: #10b981; /* Yashil rang (qarz yo'q) */
+    font-weight: 600;
+  }
+  
+  .actionBtn {
+    padding: 6px 12px;
+    background-color: #e0e7ff;
+    color: #4f46e5;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.2s;
+  
+    &:hover {
+      background-color: #c7d2fe;
+    }
+  }
